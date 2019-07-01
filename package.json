@@ -1,0 +1,24 @@
+{
+  "name": "docare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarabesset/docare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarabesset/docare/issues"
+  },
+  "homepage": "https://github.com/clarabesset/docare#readme",
+  "dependencies": {
+    "hbs": "^4.0.4"
+  }
+}
