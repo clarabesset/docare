@@ -17,9 +17,9 @@ hbs.registerPartials(__dirname + "/views/partials");
 
 const basePageRouter = require("./routes/index");
 const adminRouter = require("./routes/admin");
-const assoRouter = require("./routes/assosList");
+
 app.use(basePageRouter);
-app.use(assoRouter);
+app.use(adminRouter);
 // IL MANQUE LES PARAMETRES DE LOGIN, A VOIR PLUS TARD
 
 // app.use(basePageRouter);

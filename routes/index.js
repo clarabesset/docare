@@ -5,12 +5,8 @@ router.get(["/", "/home"], (req, res) => {
   res.render("index", { nav: false });
 });
 
-router.get(["/add"], (req, res) => {
-  res.render("add", { nav: true });
-});
-
 router.get(
-  ["/assos", "/culture", "/environment", "/health", "/solidarity"],
+  ["/assos", "/culture", "/enviro", "/health", "/solida"],
   (req, res) => {
     var cat = req.url.substring(1);
     if (cat == "assos") {

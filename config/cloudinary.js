@@ -10,8 +10,8 @@ cloudinary.config({
 
 const storage = cloudinaryStorage({
   cloudinary,
-  folder: "user-pictures",
-  allowedFormats: ["jpg", "png"],
+  folder: "docare",
+  allowedFormats: ["jpg", "png", "jpeg"],
   filename: function(req, file, cb) {
     // console.log("request =>", req);
     // console.log("file =>", file);

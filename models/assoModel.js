@@ -10,9 +10,9 @@ const assoSchema = new Schema({
   categoryAsso: {
     type: String,
     enum: ["culture", "environment", "health", "solidarity"]
-  }
+  },
   // id_tags: [{ type: Schema.Types.ObjectId, ref: "tag" }],
-  // image: { type: String, alt="ici logo" }
+  image: { type: String }
 });
 const assoModel = mongoose.model("assos", assoSchema);
 module.exports = assoModel;
