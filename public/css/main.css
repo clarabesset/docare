@@ -11,3 +11,7 @@ h1 {
 p {
   font-family: "Overpass", sans-serif;
 }
+
+body {
+  width: 100%;
+}

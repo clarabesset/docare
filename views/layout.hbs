@@ -6,7 +6,11 @@
 </head>
 
 <body>
-  {{> navbar}}
+  <header>
+    {{#if nav}}
+    {{> navbar}}
+    {{/if}}
+  </header>
   {{{body}}}
 </body>
 

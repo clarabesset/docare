@@ -6,12 +6,12 @@ router.get("/assos", (req, res) => {
   assosModel
     .find()
     .then(dbRes => {
-      res.render("assos", { assos: dbRes });
+      res.render("assos", { nav: true, assos: dbRes });
     })
     .catch(dbErr => console.log(dbErr));
 });
 router.get("/createasso", (req, res) => {
-  res.render("upload");
+  res.render("upload", { nav: true });
 });
 router.post("/oneasso", uploaderMiddleware.single("image_asso"), (req, res) => {
   const { name, since, theyDo } = req.body;
