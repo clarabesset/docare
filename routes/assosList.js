@@ -6,7 +6,7 @@ router.get("/assos", (req, res) => {
   assosModel
     .find()
     .then(dbRes => {
-      res.render("assos", { nav: true, assos: dbRes });
+      res.render("assos", { nav: true }, { assos: dbRes });
     })
     .catch(dbErr => console.log(dbErr));
 });
