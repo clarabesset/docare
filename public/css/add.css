@@ -1,0 +1,42 @@
+body {
+  width: 100vh;
+  height: 100vh;
+}
+
+select {
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+.form_title {
+  font-family: "Righteous";
+  margin-top: 0%;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.label {
+  font-family: "Overpass";
+}
+
+.flexed_item {
+  display: flex;
+}
+
+.form_item_wrapper {
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input {
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 40px;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+hr {
+  margin: 10px 0 20px;
+}
+
+.text-block {
+  padding: 20px;
+  border: 1px solid gainsboro;
+  border-radius: 0.4rem;
+  max-width: 50vw;
+  margin: 10px 0;
+}
+
+.text-mini {
+  font-size: 0.7rem;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+#nav_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+
+#products.list {
+  display: flex;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+#products.list .title {
+  text-align: center;
+}
+
+#products.list .item {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  margin-right: 20px;
+  max-width: 220px;
+}
+
+#products.list .item img {
+  max-width: 150px;
+}
+
+#products.list .item .price {
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+}
+.form label {
+  margin: 10px 0;
+}
+.form input {
+  outline: none;
+  padding: 3px 0 3px 20px;
+}
+.form input,
+.form select {
+  border: 1px solid darkslategray;
+  border-radius: 0.3rem;
+  margin-bottom: 8px;
+  height: 35px;
+}
+
+.form .btn {
+  margin-top: 10px;
+}
+
+.board {
+  margin: 30px 0;
+}
+
+.board,
+.board .cell {
+  border: 1px solid darkslategray;
+  border-collapse: collapse;
+}
+.board .head {
+  background: darkslategray;
+  color: white;
+}
+
+#title_detail_product {
+  max-width: 200px;
+}
+
+#title_detail_product .btn {
+  margin-left: 10px;
+}
+
+.board .cell {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.board .btn {
+  margin: auto;
+  height: 20px;
+}
+.board .checkbox {
+  cursor: pointer;
+}
+
+.board .row:nth-child(even) {
+  background: #5c7373b8;
+  color: white;
+}
+
+.board .row-empty {
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  max-width: 120px;
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  border: 1px solid darkslategray;
+  outline: none;
+}
+
+.btn:hover {
+  background: darkslategray;
+  border: 1px solid transparent;
+  color: white;
+  outline: none;
+}
+
+#category_widget {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 50px);
+}
+
+#category_widget #search_box_category {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#category_widget #form_category {
+  grid-column: 1/2;
+  grid-row: 2/6;
+}
+
+#category_widget #board_category {
+  margin-top: 0;
+  grid-column: 3/7;
+  grid-row: 1/5;
+  max-width: 400px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#category_widget .body .btn {
+  padding: 0;
+  height: 22px;
+  width: 22px;
+}
+
+#category_widget .body .is-editing {
+  outline: none;
+}
+
+#category_widget .body .cell.cat-name {
+  max-width: 210px;
+  word-break: break-word;
+}
+
+#category_widget .msg {
+  position: absolute;
+}
+
+#nav_dashboard {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#nav_dashboard .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkslategray;
+  height: 42px;
+  width: 65px;
+  padding: 4px;
+  margin-right: 10px;
+  border-radius: 0.3rem;
+}
+
+#page_not_found {
+  margin-top: 40px;
+  border-radius: 0.6rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.msg.success,
+.msg.warning,
+.msg.error {
+  padding: 10px;
+  border-radius: 0.4rem;
+  margin: 20px 0;
+}
+.msg.error {
+  background: #ff4136;
+  color: hsla(3, 100%, 25%, 1);
+}
+.msg.warning {
+  background: #ff851b;
+  color: hsla(28, 100%, 20%, 1);
+}
+
+.msg.success {
+  background: #2ecc40;
+  color: hsla(127, 63%, 15%, 1);
+}
+
+.search-box {
+  height: 32px;
+  min-width: 320px;
+  padding: 5px 0 5px 20px;
+  border: 1px solid darkslategray;
+  border-radius: 0.3rem;
+}
+
+.account-message {
+  padding: 10px 10px 10px 0;
+  border-radius: 0.4rem;
+}

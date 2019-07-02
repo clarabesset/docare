@@ -1,17 +1,18 @@
-<h2 class="title">help with trust</h2>
+<h2 class="title">Give your </h2>
 <h3 class="soustitle">see the requirement to get our label <a>here</a></h3>
-{{unless assos}}
+{{#unless assos}}
 <p class="text-block">no assos yet!! wtf</p>
 {{/unless}}
 {{#if assos}}
 <ul id="assosList" class="list">
   {{#each assos}}
   <h2 class="title mini">{{ this.name }}</h2>
-  <p class="since">( {{this.since}} )</p>
-  <p class="theydo">( {{this.theyDo}} )</p>
-  <p class="theydo">( {{this.theyDo}} )</p>
-  <p class="lastMission">( {{this.lastMission}} )</p>
-  </li>
-  {{/each}}
+  <p class="since">{{this.since}}</p>
+  <p class="theydo">{{this.theyDo}}</p>
+  <p class="theydo">{{this.theyDo}}</p>
+  <p class="lastMission">{{this.lastMission}}</p>
+  <a href="/on_asso/{{this._id}}" class="product-item-wrapper">
+    </li>
+    {{/each}}
 </ul>
 {{/if}}

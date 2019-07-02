@@ -25,10 +25,13 @@
   padding: 0 1.2rem;
   text-align: center;
   width: 100%;
+  margin-bottom: 10px;
+  height: 150px;
 }
 .nav-logo {
   font-family: "Righteous", cursive;
   text-decoration: none;
+  margin: 20px;
 }
 .nav-logo a {
   text-decoration: none;

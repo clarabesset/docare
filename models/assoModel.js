@@ -1,15 +1,18 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const productSchema = new Schema({
-  id: { type: Number },
+const assoSchema = new Schema({
   name: { type: String },
   since: { type: Number },
   theyDo: { type: String },
   lastMission: { type: String },
+  linkSite: { type: String },
   linkMoney: { type: String },
-  category: { type: String, enum: ["culture", "enviro", "health", "solida"] },
+  categoryAsso: {
+    type: String,
+    enum: ["culture", "environment", "health", "solidarity"]
+  }
   // id_tags: [{ type: Schema.Types.ObjectId, ref: "tag" }],
-  image: { type: String, alt="ici logo" }
+  // image: { type: String, alt="ici logo" }
 });
-const assoModel= mongoose.model("assos", assoSchema);
+const assoModel = mongoose.model("assos", assoSchema);
 module.exports = assoModel;

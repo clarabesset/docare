@@ -17,13 +17,14 @@ hbs.registerPartials(__dirname + "/views/partials");
 
 const basePageRouter = require("./routes/index");
 const adminRouter = require("./routes/admin");
+const assoRouter = require("./routes/assosList");
 app.use(basePageRouter);
-
+app.use(assoRouter);
 // IL MANQUE LES PARAMETRES DE LOGIN, A VOIR PLUS TARD
 
 // app.use(basePageRouter);
 // app.use(adminRouter);
 
-const listener = app.listen(process.env.PORT || 8000, () => {
+const listener = app.listen(process.env.PORT || 3333, () => {
   console.log(`app started at ${process.env.SITE_URL}`);
 });

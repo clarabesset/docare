@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: overpass;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  padding-left: 20px;
+  list-style: none;
+}
+.flex {
+  display: flex;
+}
+.flex.col {
+  flex-direction: column;
+}
+
+.flex.align-y-center {
+  align-items: center;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.columns,
+.rows {
+  display: flex;
+}
+.colums-reverse {
+  flex-direction: column-reverse;
+}
+.columns .item {
+  flex: 1;
+}
+.columns .item.half {
+  flex: 0 0 50%;
+}
+.columns .item.third {
+  flex: 0 0 33%;
+}
+.columns .item.quarter {
+  flex: 0 0 25%;
+}
+.rows {
+  flex-direction: column;
+}
+.rows-reverse {
+  flex-direction: row-reverse;
+}
