@@ -1,0 +1,30 @@
+<h2 class="title">help with trust</h2>
+<h3 class="soustitle">see the requirement to get our label <a>here</a></h3>
+
+<ul id="products" class="list">
+  <li class="item">
+    <h2 class="title mini">b</h2>
+    <img src="" alt="product image">
+    <p class="price">bla</p>
+    <p class="ref text-mini"></p>
+  </li>
+</ul>
+
+<h2 class="title">All products</h2>
+{{#unless assos}}
+<p class="text-block">sorry, no products yet</p>
+{{/unless}}
+{{#if assos}}
+<ul id="products" class="list">
+  {{#each assos}}
+  <li class="item">
+    <h2 class="title mini">{{ this.name }}</h2>
+    <p class="since">( {{this.since}} )</p>
+    <p class="theydo">( {{this.theyDo}} )</p>
+    <p class="theydo">( {{this.theyDo}} )</p>
+    <p class="ref text-mini">( {{this.ref}} )</p>
+
+  </li>
+  {{/each}}
+</ul>
+{{/if}}

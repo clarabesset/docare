@@ -1,0 +1,86 @@
+.pink {
+  color: #f29585;
+}
+.index_C {
+  color: #fcdd4b;
+}
+.index_A {
+  color: #77faab;
+}
+.index_R {
+  color: #78caf7;
+}
+.index_E {
+  color: #f7bbd0;
+}
+.nav-link {
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+.nav-wrapper {
+  font-family: "Overpass", sans-serif;
+  height: 53px;
+  padding: 0 1.2rem;
+  text-align: center;
+  width: 100%;
+}
+.nav-logo {
+  font-family: "Righteous", cursive;
+  text-decoration: none;
+}
+.nav-logo a {
+  text-decoration: none;
+  color: black;
+}
+h2.logo-item {
+  font-size: 2rem;
+}
+.nav-item {
+  height: 100%;
+  width: 15%;
+  padding: 10px 0;
+  align-items: center;
+  justify-items: center;
+  /* margin-right: 1.5rem;
+  transition: all 0.2s ease-in;
+  transition-property: box-shadow; */
+  list-style: none;
+}
+.culture:hover {
+  background: #fcdd4b;
+}
+.enviro:hover {
+  background: #77faab;
+}
+.health:hover {
+  background: #78caf7;
+}
+.solida:hover {
+  background: #f7bbd0;
+}
+.signlook:hover {
+  background: #ebebeb;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+}
+.nav-link {
+  color: black;
+  justify-content: center;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.culture:hover {
+  color: rgb(52, 52, 255);
+  transition: all 0.2s ease-in;
+  transition-property: box-shadow;
+}
+.nav-item a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
