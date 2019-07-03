@@ -30,7 +30,7 @@
       </div>
       <div class="form_item_wrapper flexed_item">
         <label for="asso_category" class="label">Category</label>
-        <select name="category" id="main_category" class="select">
+        <select name="categoryAsso" id="main_category" class="select">
           <option value="">Choose the association's category</option>
           <option value="culture">culture</option>
           <option value="environment">environment</option>
@@ -40,7 +40,7 @@
       </div>
       <div class="form_item_wrapper flexed_item">
         <label for="asso_image" class="label">Image</label>
-        <input class="input" type="file">
+        <input class="input" type="file" name="image">
       </div>
       <button>Add this association</button>
     </form>
@@ -61,7 +61,7 @@
         {{#each assos}}
         <tr>
           <td class="table_division">
-            <div><img src={{this.image}} alt="img"></div>
+            <div><img src={{this.image}} alt="img" class="table_image"></div>
           </td>
           <td class="table_division">
             <div>{{this.name}}</div>

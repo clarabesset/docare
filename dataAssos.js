@@ -9,7 +9,7 @@ module.exports = [
     linkMoney:
       "https://www.bibliosansfrontieres.org/wp-content/uploads/2019/06/RA-FR-31052019-light-.pdf",
     categoryAsso: "culture",
-    image: "public/img/bibliothequesansfrontière.jpeg"
+    image: "/img/bibliothequesansfrontière.jpeg"
   },
   {
     name: "Toutes à l'école",
@@ -20,7 +20,7 @@ module.exports = [
     linkMoney:
       "https://www.toutes-a-l-ecole.org/documents/PV%20AGO%2028%20janvier%202019.pdf",
     categoryAsso: "culture",
-    image: "public/img/toutesalecole.jpeg"
+    image: "/img/toutesalecole.jpeg"
   },
   {
     name: "Sos villages d'enfants",
@@ -32,7 +32,7 @@ module.exports = [
     linkMoney:
       "https://www.sosve.org/wp-media/uploads/2018/07/SOSVE-Rapport-financier-2017-bd.pdf",
     categoryAsso: "culture",
-    image: "public/img/sosvillagedenfants.jpeg"
+    image: "/img/sosvillagedenfants.jpeg"
   },
   {
     name: "Fondation paris dauphine",
@@ -42,7 +42,7 @@ module.exports = [
     linkSite: "http://www.fondation-dauphine.fr/egalite-des-chances",
     linkMoney: "https://fr.calameo.com/read/00518554126e6ebb7200d",
     categoryAsso: "culture",
-    image: "public/img/fondationparisdauphine.jpeg"
+    image: "/img/fondationparisdauphine.jpeg"
   },
   {
     name: "Action enfance",
@@ -53,7 +53,7 @@ module.exports = [
     linkSite: "https://www.actionenfance.org/",
     linkMoney: "https://www.actionenfance.org/resources/medias/Essentiel.pdf",
     categoryAsso: "culture",
-    image: "public/img/actionenfance.jpeg"
+    image: "/img/actionenfance.jpeg"
   },
   {
     name: "Aides",
@@ -64,7 +64,7 @@ module.exports = [
     linkMoney:
       "https://www.aides.org/publication/rapport-dactivite-et-bilan-financier-2017",
     categoryAsso: "health",
-    image: "public/img/aides.jpeg"
+    image: "/img/aides.jpeg"
   },
   {
     name: "Action contre la faim",
@@ -76,7 +76,7 @@ module.exports = [
     linkMoney:
       "https://www.actioncontrelafaim.org/wp-content/uploads/2019/06/Rapport-Financier-2018-vdef.pdf",
     categoryAsso: "health",
-    image: "public/img/actioncontrelafaim.jpeg"
+    image: "/img/actioncontrelafaim.jpeg"
   },
   {
     name: "Institut pasteur",
@@ -88,7 +88,7 @@ module.exports = [
     linkMoney:
       "https://www.pasteur.fr/sites/default/files/rubrique_linstitut_pasteur/ra2018-francais_2606_web.pdf",
     categoryAsso: "health",
-    image: "public/img/institutpasteur.jpeg"
+    image: "/img/institutpasteur.jpeg"
   },
   {
     name: "Petits princes",
@@ -100,7 +100,7 @@ module.exports = [
     linkMoney:
       "https://www.petitsprinces.com/sites/default/files/downloadables/rapportfinancierpp20172018_002.pdf",
     categoryAsso: "health",
-    image: "public/img/petitsprinces.jpeg"
+    image: "/img/petitsprinces.jpeg"
   },
   {
     name: "APF france handicap",
@@ -112,7 +112,7 @@ module.exports = [
     linkMoney:
       "https://www.apf-francehandicap.org/sites/default/files/apf_rapport2017_vdef.pdf?token=yd3WbEjG",
     categoryAsso: "health",
-    image: "public/img/apf.jpeg"
+    image: "/img/apf.jpeg"
   },
   {
     name: "Acted",
@@ -125,7 +125,7 @@ module.exports = [
     linkMoney:
       "https://www.acted.org/wp-content/uploads/2018/05/acted-comptes-2017.pdf",
     categoryAsso: "solidarity",
-    image: "public/img/acted.jpeg"
+    image: "/img/acted.jpeg"
   },
   {
     name: "Care",
@@ -138,7 +138,7 @@ module.exports = [
     linkMoney:
       "https://www.carefrance.org/ressources/documents/3/7ad7574-8121-Rapport_Annuel_CARE_2018.pdf",
     categoryAsso: "solidarity",
-    image: "public/img/care.jpeg"
+    image: "/img/care.jpeg"
   },
   {
     name: "Le refuge",
@@ -150,7 +150,7 @@ module.exports = [
     linkMoney:
       "https://www.le-refuge.org/wp-content/uploads/2017/08/rapport_financier_2017.pdf",
     categoryAsso: "solidarity",
-    image: "public/img/lerefuge.png"
+    image: "/img/lerefuge.png"
   },
   {
     name: "BAAM",
@@ -163,7 +163,7 @@ module.exports = [
     linkMoney:
       "http://baamasso.org/fr/compte-rendu-du-conseil-dadministration-du-31-janvier-2019/",
     categoryAsso: "solidarity",
-    image: "public/img/baam.jpeg"
+    image: "/img/baam.jpeg"
   },
   {
     name: "Amnesty International",
@@ -175,7 +175,7 @@ module.exports = [
     linkMoney:
       "https://amnestyfr.cdn.prismic.io/amnestyfr%2Fe7a40dbe-aea8-4027-b954-49661f23e0ae_aif+rapport+financier+2017_bd.pdf",
     categoryAsso: "solidarity",
-    image: "public/img/amnestyinternational.jpeg"
+    image: "/img/amnestyinternational.jpeg"
   },
   {
     name: "Aurore",
@@ -186,7 +186,7 @@ module.exports = [
     linkSite: "http://aurore.asso.fr/#",
     linkMoney: "http://aurore.asso.fr/documents/58",
     categoryAsso: "solidarity",
-    image: "public/img/aurore.jpg"
+    image: "/img/aurore.jpg"
   },
   {
     name: "SPA",
@@ -199,7 +199,7 @@ module.exports = [
     linkMoney:
       "https://www.la-spa.fr/sites/default/files/documents/19b_rapport_dactivite_2018_de_la_spa_bd.pdf",
     categoryAsso: "environment",
-    image: "public/img/aurore"
+    image: "/img/spa.png"
   },
   {
     name: "Greenpeace",
@@ -212,7 +212,7 @@ module.exports = [
     linkMoney:
       "https://cdn.greenpeace.fr/site/uploads/2018/10/RF_GP_2017.pdf?_ga=2.195997033.498686264.1561974956-1730870778.1561974956",
     categoryAsso: "environment",
-    image: "public/img/greenpeace.png"
+    image: "/img/greenpeace.png"
   },
   {
     name: "Welfarm",
@@ -224,7 +224,7 @@ module.exports = [
     linkSite: "https://welfarm.fr/",
     linkMoney: "https://welfarm.fr/pdf/Rapport%20annuel%20WELFARM%202017.pdf",
     categoryAsso: "environment",
-    image: "public/img/welfarm.jpg"
+    image: "/img/welfarm.jpg"
   },
   {
     name: "Pollinis",
@@ -237,7 +237,7 @@ module.exports = [
     linkMoney:
       "https://www.pollinis.org/admin/wp-content/uploads/2019/01/pollinis-rapport-activite-2017-web-bd.pdf",
     categoryAsso: "environment",
-    image: "public/img/pollinis.png"
+    image: "/img/pollinis.png"
   },
   {
     name: "Terre et Humanisme",
@@ -250,6 +250,6 @@ module.exports = [
     linkMoney:
       "https://terre-humanisme.org/wp-content/uploads/2019/05/rapport-cac-2018.pdf",
     categoryAsso: "environment",
-    image: "public/img/terreethumanisme.png"
+    image: "/img/terreethumanisme.png"
   }
 ];

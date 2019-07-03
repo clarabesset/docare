@@ -1,5 +1,6 @@
 require("dotenv").config();
 require("./config/dbconnect");
+require("./config/cloudinary");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const express = require("express");

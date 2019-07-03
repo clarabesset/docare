@@ -25,6 +25,7 @@ select {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  padding-top: 13%;
 }
 
 .label {
@@ -59,10 +60,12 @@ select {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  padding-top: 13%;
 }
 
 .table_title {
   font-family: "Righteous";
+  margin-top: 0%;
 }
 
 .asso_manage_table {
@@ -73,4 +76,8 @@ select {
   border: 1px solid;
   padding: 1rem;
   width: 25%;
+}
+
+.table_image {
+  width: 30px;
 }

@@ -8,8 +8,8 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_SECRET
 });
 
-const storage = cloudinaryStorage({
-  cloudinary,
+var storage = cloudinaryStorage({
+  cloudinary: cloudinary,
   folder: "docare",
   allowedFormats: ["jpg", "png", "jpeg"],
   filename: function(req, file, cb) {
@@ -18,12 +18,8 @@ const storage = cloudinaryStorage({
     cb(null, file.originalname);
     // The file on cloudinary would have the same name as the original file name
   }
-  // params below is only needed if uploading media types other than images (video, audio...)
-  // params: {
-  //     ressource_type: "raw"
-  // }
 });
 
-const fileUploader = multer({ storage }); // this function makes the upload process possible !!!!
+const fileUploader = multer({ storage: storage }); // this function makes the upload process possible !!!!
 
 module.exports = fileUploader;

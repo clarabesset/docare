@@ -1,82 +1,161 @@
+.titleAsso {
+  margin-top: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+.soustitleAsso {
+  margin-top: 5px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+}
+#linkLabel {
+  text-decoration: none;
+  color: #f29585;
+}
+#linkLabel:visited {
+  text-decoration: none;
+  color: #f29585;
+}
+#linkConfiance {
+  text-decoration: none;
+  color: #37a7e4;
+}
+#linkConfiance:visited {
+  text-decoration: none;
+  color: #78caf7;
+}
 #assosList {
   display: flex;
-  max-width: 80%;
+  max-width: 100%;
   flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-between;
 }
-
+.wrappy {
+  margin: 40px 10px 40px 10px;
+}
 .assoBox {
   padding: 20px;
   text-align: center;
   border: 3px solid black;
-  width: 400px;
-  height: 400px;
-  margin: 20px;
+  width: 390px;
+  height: 390px;
+  margin: 10px;
   text-overflow: clip;
+  box-sizing: border-box;
   position: relative;
 }
-
-/* .assoBox::after {
-  content: " ";
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  z-index: -1;
-  height: 400px;
-  width: 400px;
+.assoBox:hover {
+  padding: 20px;
+  text-align: center;
+  border: 3px solid black;
+  width: 390px;
+  height: 390px;
+  margin: 10px;
+  text-overflow: clip;
   box-sizing: border-box;
-  border: 3px solid #fcdd4b;
-} */
-
+  position: relative;
+}
 .assoBox.culture::after {
   content: " ";
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 14px;
+  top: 14px;
   z-index: -1;
-  height: 400px;
-  width: 400px;
+  height: 390px;
+  width: 390px;
   box-sizing: border-box;
-
-  border: 3px solid #fcdd4b;
+  border: 5px solid #fcdd4b;
+}
+.assoBox.culture:hover::after {
+  content: " ";
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  z-index: -1;
+  height: 390px;
+  width: 390px;
+  box-sizing: border-box;
+  border: 5px solid #fcdd4b;
+  background-color: #fcdd4b;
+  color: black;
 }
 .assoBox.environment::after {
   content: " ";
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 14px;
+  top: 14px;
   z-index: -1;
-  height: 400px;
-  width: 400px;
+  height: 390px;
+  width: 390px;
   box-sizing: border-box;
-  border: 3px solid #77faab;
+  border: 5px solid #77faab;
+}
+.assoBox.environment:hover::after {
+  content: " ";
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  z-index: -1;
+  height: 390px;
+  width: 390px;
+  box-sizing: border-box;
+  border: 5px solid #77faab;
+  background-color: #77faab;
 }
 .assoBox.health::after {
   content: " ";
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 14px;
+  top: 14px;
   z-index: -1;
-  height: 400px;
-  width: 400px;
+  height: 390px;
+  width: 390px;
   box-sizing: border-box;
-  border: 3px solid #78caf7;
+  border: 5px solid #78caf7;
+}
+.assoBox.health:hover::after {
+  content: " ";
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  z-index: -1;
+  height: 390px;
+  width: 390px;
+  box-sizing: border-box;
+  border: 5px solid #78caf7;
+  background-color: #78caf7;
 }
 .assoBox.solidarity::after {
   content: " ";
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 14px;
+  top: 14px;
   z-index: -1;
-  height: 400px;
-  width: 400px;
+  height: 390px;
+  width: 390px;
   box-sizing: border-box;
-  border: 3px solid #f7bbd0;
+  border: 5px solid #f7bbd0;
 }
-
+.assoBox.solidarity:hover::after {
+  content: " ";
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  z-index: -1;
+  height: 390px;
+  width: 390px;
+  box-sizing: border-box;
+  border: 5px solid #f7bbd0;
+  background-color: #f7bbd0;
+}
+ul {
+  padding: 0px !important;
+}
 .theyDo {
   margin-bottom: 20px;
 }
-
 .assoButton {
   text-decoration: none;
   padding: 5px;
@@ -88,23 +167,19 @@
   transition-property: box-shadow;
   border: 1px solid black;
 }
-
 .assoButton:hover {
   box-shadow: inset 0 -3px 0 0 black;
 }
-
 aside.tag-wrapper {
   width: 17%;
   padding: 2rem 1.5%;
 }
-
 .tag-title {
   font-size: 1.2rem;
   border-bottom: 1px solid rgb(212, 212, 212);
   padding-bottom: 0.8rem;
   margin-bottom: 0.8rem;
 }
-
 .tag-list-item {
   color: rgb(151, 151, 151);
   cursor: pointer;
@@ -112,61 +187,50 @@ aside.tag-wrapper {
   display: flex;
   align-items: center;
 }
-
 .checkbox {
   margin-right: 0.4rem;
 }
-
 .assos-wrapper {
-  width: 90%;
-  padding: 2rem 1.5%;
+  width: 100%;
+  padding: 10px;
+  padding-top: 14%;
 }
-
 .assos-infos {
   margin-bottom: 2rem;
 }
-
 h4.assos-title {
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
 }
-
 .assos-count {
   color: rgb(151, 151, 151);
 }
-
 .assos-subtitle {
   font-size: 0.9rem;
   color: rgb(151, 151, 151);
   max-width: 90%;
   line-height: 1.3;
 }
-
 .assos-grid {
   flex-wrap: wrap;
 }
-
 .asso-img {
   margin-bottom: 0.5rem;
   width: 100%;
 }
-
 .asso-img img {
   width: 100%;
 }
-
 .asso-name {
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 0.1rem;
 }
-
 .asso-cat {
   color: rgb(151, 151, 151);
   font-size: 0.9rem;
   margin-bottom: 0.1rem;
 }
-
 .asso-price {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;

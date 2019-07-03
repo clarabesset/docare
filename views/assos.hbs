@@ -1,19 +1,23 @@
 <section class="assos-wrapper">
   <div class="assos-infos">
-    <h2 class="title">Give your heart </h2>
-    <h3 class="soustitle">see the requirement to get our label <a>here</a></h3>
+    <h2 class="titleAsso">Trust is always earned, never given.</h2>
+    <h3 class="soustitleAsso">The non-profit organizations below are all part of the <a id="linkConfiance"
+        target="_blank" href="http://www.donenconfiance.org/">Le Don en Confiance </a> label, but we
+      do have a <a id="linkLabel" href="/label">few other requirements</a>.</h3>
     {{#unless assos}}
     <p class="text-block">no assos yet!! wtf</p>
     {{/unless}}
     {{#if assos}}
     <ul id="assosList" class="list">
       {{#each assos}}
-      <li class="square assoBox {{this.categoryAsso}}">
-        <h2 class=" title mini">{{ this.name }}</h2>
-        <p class="since">Since {{this.since}}</p>
-        <p class="theydo">{{this.theyDo}}</p>
-        <a href="/one_asso/{{this._id}}" class="assoButton">I wanna help </a>
-      </li>
+      <div class="wrappy">
+        <li class="square assoBox {{this.categoryAsso}}">
+          <h2 class=" title mini">{{ this.name }}</h2>
+          <p class="since">Since {{this.since}}</p>
+          <p class="theydo">{{this.theyDo}}</p>
+          <a href="/one_asso/{{this._id}}" class="assoButton">I wanna help </a>
+        </li>
+      </div>
       {{/each}}
     </ul>
     {{/if}}
