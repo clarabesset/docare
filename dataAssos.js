@@ -8,7 +8,8 @@ module.exports = [
     linkSite: "https://www.bibliosansfrontieres.org/",
     linkMoney:
       "https://www.bibliosansfrontieres.org/wp-content/uploads/2019/06/RA-FR-31052019-light-.pdf",
-    categoryAsso: "culture"
+    categoryAsso: "culture",
+    image: "public/img/bibliothequesansfrontière.jpeg"
   },
   {
     name: "Toutes à l'école",
@@ -18,7 +19,8 @@ module.exports = [
     linkSite: "https://www.toutes-a-l-ecole.org/fr/",
     linkMoney:
       "https://www.toutes-a-l-ecole.org/documents/PV%20AGO%2028%20janvier%202019.pdf",
-    categoryAsso: "culture"
+    categoryAsso: "culture",
+    image: "public/img/toutesalecole.jpeg"
   },
   {
     name: "Sos villages d'enfants",
@@ -29,7 +31,8 @@ module.exports = [
     linkSite: "https://www.sosve.org/",
     linkMoney:
       "https://www.sosve.org/wp-media/uploads/2018/07/SOSVE-Rapport-financier-2017-bd.pdf",
-    categoryAsso: "culture"
+    categoryAsso: "culture",
+    image: "public/img/sosvillagedenfants.jpeg"
   },
   {
     name: "Fondation paris dauphine",
@@ -38,7 +41,8 @@ module.exports = [
     lastMission: "égalité des chances",
     linkSite: "http://www.fondation-dauphine.fr/egalite-des-chances",
     linkMoney: "https://fr.calameo.com/read/00518554126e6ebb7200d",
-    categoryAsso: "culture"
+    categoryAsso: "culture",
+    image: "public/img/fondationparisdauphine.jpeg"
   },
   {
     name: "Action enfance",
@@ -48,7 +52,8 @@ module.exports = [
     lastMission: "prix littéraire 2019",
     linkSite: "https://www.actionenfance.org/",
     linkMoney: "https://www.actionenfance.org/resources/medias/Essentiel.pdf",
-    categoryAsso: "culture"
+    categoryAsso: "culture",
+    image: "public/img/actionenfance.jpeg"
   },
   {
     name: "Aides",
@@ -58,7 +63,8 @@ module.exports = [
     linkSite: "https://www.aides.org/",
     linkMoney:
       "https://www.aides.org/publication/rapport-dactivite-et-bilan-financier-2017",
-    categoryAsso: "health"
+    categoryAsso: "health",
+    image: "public/img/aides.jpeg"
   },
   {
     name: "Action contre la faim",
@@ -69,7 +75,8 @@ module.exports = [
     linkSite: "https://www.actioncontrelafaim.org/",
     linkMoney:
       "https://www.actioncontrelafaim.org/wp-content/uploads/2019/06/Rapport-Financier-2018-vdef.pdf",
-    categoryAsso: "health"
+    categoryAsso: "health",
+    image: "public/img/actioncontrelafaim.jpeg"
   },
   {
     name: "Institut pasteur",
@@ -80,7 +87,8 @@ module.exports = [
     linkSite: "https://www.pasteur.fr/fr",
     linkMoney:
       "https://www.pasteur.fr/sites/default/files/rubrique_linstitut_pasteur/ra2018-francais_2606_web.pdf",
-    categoryAsso: "health"
+    categoryAsso: "health",
+    image: "public/img/institutpasteur.jpeg"
   },
   {
     name: "Petits princes",
@@ -91,7 +99,8 @@ module.exports = [
     linkSite: "https://www.petitsprinces.com/",
     linkMoney:
       "https://www.petitsprinces.com/sites/default/files/downloadables/rapportfinancierpp20172018_002.pdf",
-    categoryAsso: "health"
+    categoryAsso: "health",
+    image: "public/img/petitsprinces.jpeg"
   },
   {
     name: "APF france handicap",
@@ -102,7 +111,8 @@ module.exports = [
     linkSite: "https://www.apf-francehandicap.org/",
     linkMoney:
       "https://www.apf-francehandicap.org/sites/default/files/apf_rapport2017_vdef.pdf?token=yd3WbEjG",
-    categoryAsso: "health"
+    categoryAsso: "health",
+    image: "public/img/apf.jpeg"
   },
   {
     name: "Acted",
@@ -114,7 +124,8 @@ module.exports = [
     linkSite: "https://www.acted.org",
     linkMoney:
       "https://www.acted.org/wp-content/uploads/2018/05/acted-comptes-2017.pdf",
-    categoryAsso: "solidarity"
+    categoryAsso: "solidarity",
+    image: "public/img/acted.jpeg"
   },
   {
     name: "Care",
@@ -126,7 +137,8 @@ module.exports = [
     linkSite: "https://www.carefrance.org",
     linkMoney:
       "https://www.carefrance.org/ressources/documents/3/7ad7574-8121-Rapport_Annuel_CARE_2018.pdf",
-    categoryAsso: "solidarity"
+    categoryAsso: "solidarity",
+    image: "public/img/care.jpeg"
   },
   {
     name: "Le refuge",
@@ -137,7 +149,8 @@ module.exports = [
     linkSite: "https://www.le-refuge.org/",
     linkMoney:
       "https://www.le-refuge.org/wp-content/uploads/2017/08/rapport_financier_2017.pdf",
-    categoryAsso: "solidarity"
+    categoryAsso: "solidarity",
+    image: "public/img/lerefuge.png"
   },
   {
     name: "BAAM",
@@ -149,7 +162,8 @@ module.exports = [
     linkSite: "http://baamasso.org/fr/",
     linkMoney:
       "http://baamasso.org/fr/compte-rendu-du-conseil-dadministration-du-31-janvier-2019/",
-    categoryAsso: "solidarity"
+    categoryAsso: "solidarity",
+    image: "public/img/baam.jpeg"
   },
   {
     name: "Amnesty International",
@@ -160,7 +174,8 @@ module.exports = [
     linkSite: "https://www.amnesty.fr",
     linkMoney:
       "https://amnestyfr.cdn.prismic.io/amnestyfr%2Fe7a40dbe-aea8-4027-b954-49661f23e0ae_aif+rapport+financier+2017_bd.pdf",
-    categoryAsso: "solidarity"
+    categoryAsso: "solidarity",
+    image: "public/img/amnestyinternational.jpeg"
   },
   {
     name: "Aurore",
@@ -170,7 +185,8 @@ module.exports = [
     lastMission: "Opération végétalisation réussie pour le Bastion de Bercy",
     linkSite: "http://aurore.asso.fr/#",
     linkMoney: "http://aurore.asso.fr/documents/58",
-    categoryAsso: "solidarity"
+    categoryAsso: "solidarity",
+    image: "public/img/aurore.jpg"
   },
   {
     name: "SPA",
@@ -182,7 +198,8 @@ module.exports = [
     linkSite: "https://www.la-spa.fr/",
     linkMoney:
       "https://www.la-spa.fr/sites/default/files/documents/19b_rapport_dactivite_2018_de_la_spa_bd.pdf",
-    categoryAsso: "environment"
+    categoryAsso: "environment",
+    image: "public/img/aurore"
   },
   {
     name: "Greenpeace",
@@ -194,7 +211,8 @@ module.exports = [
     linkSite: "https://www.greenpeace.fr",
     linkMoney:
       "https://cdn.greenpeace.fr/site/uploads/2018/10/RF_GP_2017.pdf?_ga=2.195997033.498686264.1561974956-1730870778.1561974956",
-    categoryAsso: "environment"
+    categoryAsso: "environment",
+    image: "public/img/greenpeace.png"
   },
   {
     name: "Welfarm",
@@ -205,7 +223,8 @@ module.exports = [
       "En 1997, WELFARM a réalisé un film qui a révélé les brutalités dont sont victimes les animaux sur les marchés aux bestiaux français. Des extraits de ce film ont été montrés sur les chaînes de télévision françaises.",
     linkSite: "https://welfarm.fr/",
     linkMoney: "https://welfarm.fr/pdf/Rapport%20annuel%20WELFARM%202017.pdf",
-    categoryAsso: "environment"
+    categoryAsso: "environment",
+    image: "public/img/welfarm.jpg"
   },
   {
     name: "Pollinis",
@@ -217,7 +236,8 @@ module.exports = [
     linkSite: "https://www.pollinis.org/",
     linkMoney:
       "https://www.pollinis.org/admin/wp-content/uploads/2019/01/pollinis-rapport-activite-2017-web-bd.pdf",
-    categoryAsso: "environment"
+    categoryAsso: "environment",
+    image: "public/img/pollinis.png"
   },
   {
     name: "Terre et Humanisme",
@@ -229,6 +249,7 @@ module.exports = [
     linkSite: "https://terre-humanisme.org/",
     linkMoney:
       "https://terre-humanisme.org/wp-content/uploads/2019/05/rapport-cac-2018.pdf",
-    categoryAsso: "environment"
+    categoryAsso: "environment",
+    image: "public/img/terreethumanisme.png"
   }
 ];
