@@ -13,7 +13,7 @@ router.get(
       assosModel
         .find()
         .then(assos => {
-          console.log("toto");
+          console.log(assos[0]);
           res.render("assos", { nav: true, assos });
         })
         .catch(err => {
@@ -31,5 +31,12 @@ router.get(
       });
   }
 );
+
+router.get("/one_asso/:id", (req, res) => {
+  assosModel
+    .findById(req.params.id)
+    .then(asso => res.render("one_asso", { asso }))
+    .catch(err => console.log(err));
+});
 
 module.exports = router;

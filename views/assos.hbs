@@ -1,18 +1,43 @@
-<h2 class="title">Give your </h2>
-<h3 class="soustitle">see the requirement to get our label <a>here</a></h3>
-{{#unless assos}}
-<p class="text-block">no assos yet!! wtf</p>
-{{/unless}}
-{{#if assos}}
-<ul id="assosList" class="list">
-  {{#each assos}}
-  <h2 class="title mini">{{ this.name }}</h2>
-  <p class="since">{{this.since}}</p>
-  <p class="theydo">{{this.theyDo}}</p>
-  <p class="lastMission">{{this.lastMission}}</p>
-  <a href="/on_asso/{{this._id}}" class="product-item-wrapper">
-    <img src=“{{this.image}}” alt=“product {{this.ref}} image”>
-    </li>
+<section class="assos-wrapper">
+  <div class="assos-infos">
+    <h2 class="title">Give your heart </h2>
+    <h3 class="soustitle">see the requirement to get our label <a>here</a></h3>
+    {{#unless assos}}
+    <p class="text-block">no assos yet!! wtf</p>
+    {{/unless}}
+    {{#if assos}}
+    <ul id="assosList" class="list">
+      {{#each assos}}
+      <li class="square assoBox {{this.categoryAsso}}">
+        <h2 class=" title mini">{{ this.name }}</h2>
+        <p class="since">Since {{this.since}}</p>
+        <p class="theydo">{{this.theyDo}}</p>
+        <a href="/one_asso/{{this._id}}" class="assoButton">I wanna help </a>
+      </li>
+      {{/each}}
+    </ul>
+    {{/if}}
+  </div>
+</section>
+
+{{!-- <section class="assos-wrapper">
+  <div class="assos-infos">
+    <h4 class="assos-title">
+      {{#compare category "collection" operator="==="}}
+      Whole
+      {{/compare}}
+      {{#compare category "collection" operator="!="}}
+      {{category}}
+      {{/compare}}
+      collection <span id="assos_count" class="assos-count">({{assos.length}})</span>
+    </h4>
+  </div>
+  {{#unless assos}}
+  <p>Sorry, no assos yet !</p>
+  {{/unless}}
+  <div id="products_grid" class="products-grid flexed-item">
+    {{#each assos}}
+    {{> asso_mini }}
     {{/each}}
-</ul>
-{{/if}}
+  </div>
+</section> --}}

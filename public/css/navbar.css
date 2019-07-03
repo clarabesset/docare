@@ -51,16 +51,16 @@ h2.logo-item {
   transition-property: box-shadow; */
   list-style: none;
 }
-.culture:hover {
+.nav-item.culture:hover {
   background: #fcdd4b;
 }
-.enviro:hover {
+.nav-item.enviro:hover {
   background: #77faab;
 }
-.health:hover {
+.nav-item.health:hover {
   background: #78caf7;
 }
-.solida:hover {
+.nav-item.solida:hover {
   background: #f7bbd0;
 }
 .signlook:hover {

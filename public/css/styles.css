@@ -4,12 +4,16 @@
 
 body {
   padding: 40px;
-  font-family: Arial;
+  font-family: "Overpass";
   font-size: 16px;
 }
 
 hr {
   margin: 10px 0 20px;
+}
+
+ul {
+  list-style: none;
 }
 
 .text-block {
@@ -39,17 +43,11 @@ hr {
   align-items: center;
 }
 
-#products.list {
-  display: flex;
-  max-width: 80%;
-  flex-wrap: wrap;
-}
-
-#products.list .title {
+#assos.list .title {
   text-align: center;
 }
 
-#products.list .item {
+#assos.list .item {
   border: 1px solid;
   display: flex;
   flex-direction: column;
@@ -60,11 +58,11 @@ hr {
   max-width: 220px;
 }
 
-#products.list .item img {
+#assos.list .item img {
   max-width: 150px;
 }
 
-#products.list .item .price {
+#assos.list .item .price {
   font-weight: bolder;
   margin-top: 10px;
   margin-bottom: 10px;
