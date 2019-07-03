@@ -1,28 +1,5 @@
 module.exports = [
   {
-    name: "Bibliothèques sans frontières",
-    since: "2007",
-    theyDo:
-      "Porter la connaissance à celles et ceux qui en sont le plus éloigné.e.s",
-    lastMission: "ouvrons + les bibliothèques",
-    linkSite: "https://www.bibliosansfrontieres.org/",
-    linkMoney:
-      "https://www.bibliosansfrontieres.org/wp-content/uploads/2019/06/RA-FR-31052019-light-.pdf",
-    categoryAsso: "culture",
-    image: "/img/bibliothequesansfrontière.jpeg"
-  },
-  {
-    name: "Toutes à l'école",
-    since: "2005",
-    theyDo: "Création d'une école 'happy chandara'",
-    lastMission: "'happy chandara'",
-    linkSite: "https://www.toutes-a-l-ecole.org/fr/",
-    linkMoney:
-      "https://www.toutes-a-l-ecole.org/documents/PV%20AGO%2028%20janvier%202019.pdf",
-    categoryAsso: "culture",
-    image: "/img/toutesalecole.jpeg"
-  },
-  {
     name: "Sos villages d'enfants",
     since: "1952",
     theyDo:
@@ -33,27 +10,6 @@ module.exports = [
       "https://www.sosve.org/wp-media/uploads/2018/07/SOSVE-Rapport-financier-2017-bd.pdf",
     categoryAsso: "culture",
     image: "/img/sosvillagedenfants.jpeg"
-  },
-  {
-    name: "Fondation paris dauphine",
-    since: "2008",
-    theyDo: "Soutient le progrès de l'enseignement supérieur",
-    lastMission: "égalité des chances",
-    linkSite: "http://www.fondation-dauphine.fr/egalite-des-chances",
-    linkMoney: "https://fr.calameo.com/read/00518554126e6ebb7200d",
-    categoryAsso: "culture",
-    image: "/img/fondationparisdauphine.jpeg"
-  },
-  {
-    name: "Action enfance",
-    since: "1943",
-    theyDo:
-      "Accueillir, protéger et éduquer des enfants en danger sur le long terme",
-    lastMission: "prix littéraire 2019",
-    linkSite: "https://www.actionenfance.org/",
-    linkMoney: "https://www.actionenfance.org/resources/medias/Essentiel.pdf",
-    categoryAsso: "culture",
-    image: "/img/actionenfance.jpeg"
   },
   {
     name: "Aides",
@@ -79,6 +35,29 @@ module.exports = [
     image: "/img/actioncontrelafaim.jpeg"
   },
   {
+    name: "Greenpeace",
+    since: "1971",
+    theyDo:
+      "Greenpeace est un réseau international d'organisations indépendantes qui agissent selon les principes de non-violence pour protéger l’environmentnnement, la biodiversité et promouvoir la paix. Elle s’appuie sur un mouvement de citoyennes et citoyens engagé-e-s pour construire un monde durable et équitable.",
+    lastMission:
+      "Le 18 décembre dernier, Greenpeace France, la Fondation pour la Nature et l’Homme (FNH), Notre Affaire à Tous et Oxfam France lançaient l’Affaire du siècle, une initiative inédite : assigner l’État français en justice pour inaction face aux changements climatiques et non-respect de ses obligations internationales, européennes et françaises.",
+    linkSite: "https://www.greenpeace.fr",
+    linkMoney:
+      "https://cdn.greenpeace.fr/site/uploads/2018/10/RF_GP_2017.pdf?_ga=2.195997033.498686264.1561974956-1730870778.1561974956",
+    categoryAsso: "environment",
+    image: "/img/greenpeace.png"
+  },
+  {
+    name: "Fondation paris dauphine",
+    since: "2008",
+    theyDo: "Soutient le progrès de l'enseignement supérieur",
+    lastMission: "égalité des chances",
+    linkSite: "http://www.fondation-dauphine.fr/egalite-des-chances",
+    linkMoney: "https://fr.calameo.com/read/00518554126e6ebb7200d",
+    categoryAsso: "culture",
+    image: "/img/fondationparisdauphine.jpeg"
+  },
+  {
     name: "Institut pasteur",
     since: "1887",
     theyDo:
@@ -89,6 +68,19 @@ module.exports = [
       "https://www.pasteur.fr/sites/default/files/rubrique_linstitut_pasteur/ra2018-francais_2606_web.pdf",
     categoryAsso: "health",
     image: "/img/institutpasteur.jpeg"
+  },
+  {
+    name: "Care",
+    since: "1945",
+    theyDo:
+      "Un des plus grands réseaux d'aide humanitaire au monde, apolitique et non confessionnel. Notre objectif est de lutter contre l'extrême pauvreté et de défendre l'accès aux droits fondamentaux.",
+    lastMission:
+      "Au Guatemala, par exemple, CARE renforce les compétences techniques des organisations qui défendent les droits des femmes autochtones.",
+    linkSite: "https://www.carefrance.org",
+    linkMoney:
+      "https://www.carefrance.org/ressources/documents/3/7ad7574-8121-Rapport_Annuel_CARE_2018.pdf",
+    categoryAsso: "solidarity",
+    image: "/img/care.jpeg"
   },
   {
     name: "Petits princes",
@@ -128,19 +120,6 @@ module.exports = [
     image: "/img/acted.jpeg"
   },
   {
-    name: "Care",
-    since: "1945",
-    theyDo:
-      "Un des plus grands réseaux d'aide humanitaire au monde, apolitique et non confessionnel. Notre objectif est de lutter contre l'extrême pauvreté et de défendre l'accès aux droits fondamentaux.",
-    lastMission:
-      "Au Guatemala, par exemple, CARE renforce les compétences techniques des organisations qui défendent les droits des femmes autochtones.",
-    linkSite: "https://www.carefrance.org",
-    linkMoney:
-      "https://www.carefrance.org/ressources/documents/3/7ad7574-8121-Rapport_Annuel_CARE_2018.pdf",
-    categoryAsso: "solidarity",
-    image: "/img/care.jpeg"
-  },
-  {
     name: "Le refuge",
     since: "2003",
     theyDo:
@@ -178,17 +157,6 @@ module.exports = [
     image: "/img/amnestyinternational.jpeg"
   },
   {
-    name: "Aurore",
-    since: "1871",
-    theyDo:
-      "Héberge, soigne et accompagne plus de 37 000 personnes en situation de précarité ou d’exclusion vers une insertion sociale et professionnelle",
-    lastMission: "Opération végétalisation réussie pour le Bastion de Bercy",
-    linkSite: "http://aurore.asso.fr/#",
-    linkMoney: "http://aurore.asso.fr/documents/58",
-    categoryAsso: "solidarity",
-    image: "/img/aurore.jpg"
-  },
-  {
     name: "SPA",
     since: "1845",
     theyDo:
@@ -202,19 +170,6 @@ module.exports = [
     image: "/img/spa.png"
   },
   {
-    name: "Greenpeace",
-    since: "1971",
-    theyDo:
-      "Greenpeace est un réseau international d'organisations indépendantes qui agissent selon les principes de non-violence pour protéger l’environmentnnement, la biodiversité et promouvoir la paix. Elle s’appuie sur un mouvement de citoyennes et citoyens engagé-e-s pour construire un monde durable et équitable.",
-    lastMission:
-      "Le 18 décembre dernier, Greenpeace France, la Fondation pour la Nature et l’Homme (FNH), Notre Affaire à Tous et Oxfam France lançaient l’Affaire du siècle, une initiative inédite : assigner l’État français en justice pour inaction face aux changements climatiques et non-respect de ses obligations internationales, européennes et françaises.",
-    linkSite: "https://www.greenpeace.fr",
-    linkMoney:
-      "https://cdn.greenpeace.fr/site/uploads/2018/10/RF_GP_2017.pdf?_ga=2.195997033.498686264.1561974956-1730870778.1561974956",
-    categoryAsso: "environment",
-    image: "/img/greenpeace.png"
-  },
-  {
     name: "Welfarm",
     since: "1994",
     theyDo:
@@ -225,6 +180,29 @@ module.exports = [
     linkMoney: "https://welfarm.fr/pdf/Rapport%20annuel%20WELFARM%202017.pdf",
     categoryAsso: "environment",
     image: "/img/welfarm.jpg"
+  },
+  {
+    name: "Bibliothèques sans frontières",
+    since: "2007",
+    theyDo:
+      "Porter la connaissance à celles et ceux qui en sont le plus éloigné.e.s",
+    lastMission: "ouvrons + les bibliothèques",
+    linkSite: "https://www.bibliosansfrontieres.org/",
+    linkMoney:
+      "https://www.bibliosansfrontieres.org/wp-content/uploads/2019/06/RA-FR-31052019-light-.pdf",
+    categoryAsso: "culture",
+    image: "/img/bibliothequesansfrontière.jpeg"
+  },
+  {
+    name: "Aurore",
+    since: "1871",
+    theyDo:
+      "Héberge, soigne et accompagne plus de 37 000 personnes en situation de précarité ou d’exclusion vers une insertion sociale et professionnelle",
+    lastMission: "Opération végétalisation réussie pour le Bastion de Bercy",
+    linkSite: "http://aurore.asso.fr/#",
+    linkMoney: "http://aurore.asso.fr/documents/58",
+    categoryAsso: "solidarity",
+    image: "/img/aurore.jpg"
   },
   {
     name: "Pollinis",
@@ -240,6 +218,17 @@ module.exports = [
     image: "/img/pollinis.png"
   },
   {
+    name: "Action enfance",
+    since: "1943",
+    theyDo:
+      "Accueillir, protéger et éduquer des enfants en danger sur le long terme",
+    lastMission: "prix littéraire 2019",
+    linkSite: "https://www.actionenfance.org/",
+    linkMoney: "https://www.actionenfance.org/resources/medias/Essentiel.pdf",
+    categoryAsso: "culture",
+    image: "/img/actionenfance.jpeg"
+  },
+  {
     name: "Terre et Humanisme",
     since: "1993",
     theyDo:
@@ -251,5 +240,16 @@ module.exports = [
       "https://terre-humanisme.org/wp-content/uploads/2019/05/rapport-cac-2018.pdf",
     categoryAsso: "environment",
     image: "/img/terreethumanisme.png"
+  },
+  {
+    name: "Toutes à l'école",
+    since: "2005",
+    theyDo: "Création d'une école 'happy chandara'",
+    lastMission: "'happy chandara'",
+    linkSite: "https://www.toutes-a-l-ecole.org/fr/",
+    linkMoney:
+      "https://www.toutes-a-l-ecole.org/documents/PV%20AGO%2028%20janvier%202019.pdf",
+    categoryAsso: "culture",
+    image: "/img/toutesalecole.jpeg"
   }
 ];

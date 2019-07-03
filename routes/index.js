@@ -6,7 +6,7 @@ router.get(["/", "/home"], (req, res) => {
 });
 
 router.get(
-  ["/assos", "/culture", "/enviro", "/health", "/solida"],
+  ["/assos", "/culture", "/environment", "/health", "/solidarity"],
   (req, res) => {
     var cat = req.url.substring(1);
     if (cat == "assos") {
@@ -22,9 +22,9 @@ router.get(
       return;
     }
     assosModel
-      .find({ categoryAssos: cat })
+      .find({ categoryAsso: cat })
       .then(assos => {
-        res.render("assos", { assos });
+        res.render("assos", { assos, nav: true });
       })
       .catch(err => {
         res.render("404");
@@ -35,7 +35,7 @@ router.get(
 router.get("/one_asso/:id", (req, res) => {
   assosModel
     .findById(req.params.id)
-    .then(asso => res.render("one_asso", { asso }))
+    .then(asso => res.render("one_asso", { nav: true, asso }))
     .catch(err => console.log(err));
 });
 

@@ -36,6 +36,7 @@
   position: fixed;
   background-color: white;
   z-index: 2;
+  margin-top: -2%;
 }
 .nav-logo {
   font-family: "Righteous", cursive;
