@@ -5,7 +5,14 @@ const dataAsso = require("../dataAssos");
 const uploaderMiddleware = require("../config/cloudinary.js");
 
 router.get(["/add"], (req, res) => {
-  res.render("add", { nav: true });
+  assosModel
+    .find()
+    .then(assos => {
+      res.render("add", { assos, nav: true });
+    })
+    .catch(err => {
+      console.log(err);
+    });
 });
 
 // router.get("/assos", (req, res) => {
@@ -50,6 +57,37 @@ router.post("/add", uploaderMiddleware.single("image"), (req, res, next) => {
       console.log("db problem !!!");
       console.log(error);
     });
+});
+
+router.get("/edit_asso/:id", (req, res) => {
+  assosModel
+    .findById(req.params.id)
+    .then(edit => {
+      res.render("edit", { edit, nav: true });
+    })
+    .catch(err => {
+      console.log(err);
+    });
+});
+
+router.post(
+  "/edit_asso/:id",
+  uploaderMiddleware.single("image"),
+  (req, res) => {
+    // const imgUrl = req.file.secure_url;
+    // req.body.image = imgUrl;
+    assosModel
+      .findByIdAndUpdate(req.params.id, req.body)
+      .then(() => res.redirect("/assos"))
+      .catch(() => res.render("edit", { errormessage: "edit didn't works" }));
+  }
+);
+
+router.get("/delete_asso/:id", (req, res) => {
+  assosModel
+    .findByIdAndRemove(req.params.id)
+    .then(sucess => res.redirect("/add"))
+    .catch(error => res.redirect("/add"));
 });
 
 function insertdb() {
