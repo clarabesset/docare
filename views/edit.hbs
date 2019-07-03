@@ -1,0 +1,45 @@
+<div class="big_container">
+  <div class="form_container">
+    <form method="POST" action="/edit_asso/{{edit._id}}" enctype="multipart/form-data">
+      <h3 class="form_title">EDIT ASSOCIATION</h3>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_name" class="label">Association's name</label>
+        <input value="{{edit.name}}" name="name" type="text" class="input">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_date" class="label">Creation's date</label>
+        <input value="{{edit.since}}" name="since" type="text" class="input">
+      </div class="flexed_item">
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_do" class="label">What they do</label>
+        <input value="{{edit.theyDo}}" name="theyDo" type="text" class="input">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_last" class="label">Last mission</label>
+        <input value="{{edit.lastMission}}" name="lastMission" type="text" class="input">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_link" class="label">Site link</label>
+        <input value="{{edit.linkSite}}" name="linkSite" type="text" class="input">
+      </div>
+      <div class=" form_item_wrapper flexed_item">
+        <label for="asso_financial" class="label">Financial report</label>
+        <input value="{{edit.linkMoney}}" name="linkMoney" type="text" class="input">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_category" class="label">Category</label>
+        <select name="category" id="main_category" class="select">
+          <option value="">{{edit.categoryAsso}}</option>
+          <option value="culture">culture</option>
+          <option value="environment">environment</option>
+          <option value="health">health</option>
+          <option value="solidarity">solidarity</option>
+        </select>
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_image" class="label">Image</label>
+        <input class="input" type="file" value="{{edit.image}}">
+      </div>
+      <button>Modify this association</button>
+    </form>
+  </div>

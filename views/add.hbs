@@ -1,51 +1,76 @@
-<div class="form_container">
-  <form method="POST" action="/add" enctype="multipart/form-data">
+{{!-- ADD ASSOCIATION --}}
+
+<div class="big_container">
+  <div class="form_container">
     <h3 class="form_title">ADD ASSOCIATION</h3>
-    <div class="form_item_wrapper flexed_item">
-      <label for="asso_name" class="label">Association's name</label>
-      <input value="Les restos du coeur" name="name" type="text" class="input" placeholder="ex: Les restos du coeur">
-    </div>
-    <div class="form_item_wrapper flexed_item">
-      <label for="asso_date" class="label">Creation's date</label>
-      <input value="2009" name="since" type="text" class="input" placeholder="ex: 2009">
-    </div class="flexed_item">
-    <div class="form_item_wrapper flexed_item">
-      <label for="asso_do" class="label">What they do</label>
-      <input value="they make good things" name="theyDo" type="text" class="input"
-        placeholder="ex: They protect animals">
-    </div>
-    <div class="form_item_wrapper flexed_item">
-      <label for="asso_last" class="label">Last mission</label>
-      <input value="go on mars" name="lastMission" type="text" class="input"
-        placeholder="ex: They created a new school">
-    </div>
-    <div class="form_item_wrapper flexed_item">
-      <label for="asso_link" class="label">Site link</label>
-      <input value="youtube.com" name="linkSite" type="text" class="input" placeholder="ex: http">
-    </div>
-    <div class="form_item_wrapper flexed_item">
-      <label for="asso_financial" class="label">Financial report</label>
-      <input value="finance.com" name="linkMoney" type="text" class="input"
-        placeholder="Link to their financial report">
-    </div>
-    <div class="form_item_wrapper flexed_item">
-      <label for="asso_category" class="label">Category</label>
-      <select name="category" id="main_category" class="select">
-        <option value="">Choose the association's category</option>
-        <option value="culture">culture</option>
-        <option value="environment">environment</option>
-        <option value="health">health</option>
-        <option value="solidarity">solidarity</option>
-      </select>
-    </div>
-    <div class="form_item_wrapper flexed_item">
-      <label for="asso_image" class="label">Image</label>
-      <input class="input" type="file">
-    </div>
-    <button>Add this association</button>
-  </form>
-</div>
-
-<div class="table_container">
-
+    <form method="POST" action="/add" enctype="multipart/form-data" class="asso_add_form">
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_name" class="label">Association's name</label>
+        <input name="name" type="text" class="input" placeholder="ex: Les restos du coeur">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_date" class="label">Creation's date</label>
+        <input name="since" type="text" class="input" placeholder="ex: 2009">
+      </div class="flexed_item">
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_do" class="label">What they do</label>
+        <input name="theyDo" type="text" class="input" placeholder="ex: They protect animals">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_last" class="label">Last mission</label>
+        <input name="lastMission" type="text" class="input" placeholder="ex: They created a new school">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_link" class="label">Site link</label>
+        <input name="linkSite" type="text" class="input" placeholder="ex: http">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_financial" class="label">Financial report</label>
+        <input name="linkMoney" type="text" class="input" placeholder="Link to their financial report">
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_category" class="label">Category</label>
+        <select name="category" id="main_category" class="select">
+          <option value="">Choose the association's category</option>
+          <option value="culture">culture</option>
+          <option value="environment">environment</option>
+          <option value="health">health</option>
+          <option value="solidarity">solidarity</option>
+        </select>
+      </div>
+      <div class="form_item_wrapper flexed_item">
+        <label for="asso_image" class="label">Image</label>
+        <input class="input" type="file">
+      </div>
+      <button>Add this association</button>
+    </form>
+  </div>
+  {{!-- MANAGE ASSOCIATION --}}
+  <div class="table_container">
+    <h3 class="table_title">MANAGE YOUR ASSOCIATIONS</h3>
+    <table class="asso_manage_table">
+      <thead>
+        <tr class="table_row">
+          <th>Association's logo</th>
+          <th>Association's name</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each assos}}
+        <tr>
+          <td class="table_division">
+            <div><img src={{this.image}} alt="img"></div>
+          </td>
+          <td class="table_division">
+            <div>{{this.name}}</div>
+          </td>
+          <td class="table_division"><a href="/edit_asso/{{this._id}}" class="fas fa-edit"></i></a></td>
+          <td class="table_division"><a href="/delete_asso/{{this._id}}" class="fas fa-trash"></a></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
 </div>
