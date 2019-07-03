@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass%7CRighteous%7CRubik+Mono+One&display=swap");
+.one-asso-container {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - (84px));
+}
+.one-asso-container > * {
+  margin-bottom: 1.2rem;
+}
+.asso-info-header {
+  text-align: center;
+}
+.asso-name {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.asso-theyDo {
+  font-size: 1rem;
+}
+.asso-lastMission {
+  font-size: 1rem;
+}
+.asso-select {
+  width: 135px;
+  margin-right: 1rem;
+}
+.shop-cart-icon-page {
+  color: white;
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
+}
+.asso-img-container {
+  width: 35%;
+}
+.asso-img {
+  width: 200px;
+}

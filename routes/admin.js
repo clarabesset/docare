@@ -93,6 +93,6 @@ function insertdb() {
     .catch(err => console.log(err));
 }
 
-insertdb();
+// insertdb();
 
 module.exports = router;
