@@ -1,17 +1,49 @@
 @import url("https://fonts.googleapis.com/css?family=Overpass%7CRighteous%7CRubik+Mono+One&display=swap");
 .one-asso-container {
   font-family: "Overpass", sans-serif;
+  color: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   height: calc(100vh - (84px));
+  margin-right: 20px;
+}
+.informationDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 50px;
+  margin-top: 130px;
+}
+.donationDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 2px;
+  margin-top: 130px;
+  margin-left: 2px;
+  margin-right: 100px;
+}
+.moneyDonation {
+  margin-right: 50px;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+  font-size: 23px;
+}
+.timeDonation {
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+  font-size: 23px;
+}
+.listTimeDonations {
+  text-align: left;
+  font-size: 18px;
+  font-style: italic;
 }
 .one-asso-container > * {
   margin-bottom: 1.2rem;
-}
-.asso-info-header {
-  text-align: center;
 }
 .asso-name {
   font-size: 2.3rem;
@@ -23,18 +55,30 @@
 .asso-lastMission {
   font-size: 1rem;
 }
-.asso-select {
-  width: 135px;
-  margin-right: 1rem;
+.asso-since {
+  font-size: 1rem;
 }
-.shop-cart-icon-page {
-  color: white;
-  font-size: 0.7rem;
-  margin-left: 0.2rem;
-}
-.asso-img-container {
-  width: 35%;
+.asso-imageBox {
+  margin: 20px;
 }
 .asso-img {
-  width: 200px;
+  padding: 20px;
+  border: 1px solid black;
+  width: 300px;
+  margin: 10px 0 10px 10px;
+  text-overflow: clip;
+  box-sizing: border-box;
+  position: relative;
+  background-color: white;
+}
+.asso-info {
+  text-align: center;
+  box-sizing: border-box;
+  border: 5px solid #78caf7;
+  margin: 200px 10px -200px -100px;
+  z-index: -1;
+  padding: 30px;
+  width: 400px;
+  height: 400px;
+  right: 10px;
 }

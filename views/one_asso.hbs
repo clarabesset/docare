@@ -1,14 +1,53 @@
 <div class="one-asso-container">
-  <div class="asso-info">
-    <div class="asso-info-header">
+  <div class="informationDiv">
+    <div class="asso-imageBox">
       <img src={{asso.image}} alt="img-product" class="asso-img">
+    </div>
+    <div class="asso-info">
       <h2 class="asso-name">{{asso.name}}</h2>
-      <p class="asso-theyDo">We do: {{asso.theyDo}}</p>
+      <p class="asso-since">Since: {{asso.since}}</p>
+      <p class="asso-theyDo">What we do: {{asso.theyDo}}</p>
       <p class="asso-lastMission">Last Mission: {{asso.lastMission}}</p>
     </div>
+  </div>
+  <div class="donationDiv">
+    <div class="moneyDonation">
+      <h3 class="titleMoney">Give <i class="fas fa-dollar-sign"></i>
+
+      </h3>
+
+    </div>
+    <div class="timeDonation">
+      <h3 class="titleMoney">Give <i class="far fa-clock"></i>
+        <ul class="listTimeDonations">
+          <li><i class="fas fa-long-arrow-alt-right"></i>
+
+            Get the facts yourself and educate others!</li>
+          </br>
+          <li><i class="fas fa-long-arrow-alt-right"></i>
+
+            Volunteer with us!
+          </li>
+          </br>
+
+          <li><i class="fas fa-long-arrow-alt-right"></i>
+
+            Join our street fundraising team!
+          </li>
+          </br>
+
+        </ul>
+
+      </h3>
 
 
-    {{!-- <body>
+    </div>
+
+  </div>
+
+
+
+  {{!-- <body>
   <div class="donation-container">
 
     <div class="donation-box">
@@ -59,4 +98,4 @@
   <script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
 </body> --}}
 
-  </div>
+</div>

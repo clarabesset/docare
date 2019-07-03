@@ -17,6 +17,8 @@ select {
 .form_title {
   font-family: "Righteous";
   margin-top: 0%;
+  color: blue;
+  border-bottom: 1px solid;
 }
 
 .form_container {
@@ -50,6 +52,25 @@ select {
 
 .asso_add_form {
   border: 1px solid;
+  padding: 3%;
+}
+
+.btn_form {
+  color: white;
+  background: blue;
+  border: 1px solid;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+  transition-property: color, background;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+}
+
+.btn_form:hover {
+  color: black;
+  background: white;
+  border: 1px solid;
 }
 
 /*-------------- MANAGE TABLE --------------*/
@@ -66,10 +87,13 @@ select {
 .table_title {
   font-family: "Righteous";
   margin-top: 0%;
+  color: blue;
+  border-bottom: 1px solid;
 }
 
 .asso_manage_table {
   border: 1px solid;
+  border-collapse: collapse;
 }
 
 .table_division {
@@ -80,4 +104,13 @@ select {
 
 .table_image {
   width: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+th {
+  border: 1px solid;
 }
