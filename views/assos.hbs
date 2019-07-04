@@ -11,12 +11,14 @@
     <ul id="assosList" class="list">
       {{#each assos}}
       <div class="wrappy">
-        <li class="square assoBox {{this.categoryAsso}}">
-          <h2 class=" title mini">{{ this.name }}</h2>
-          <p class="since">Since {{this.since}}</p>
-          <p class="theydo">{{this.theyDo}}</p>
-          <a href="/one_asso/{{this._id}}" class="assoButton">I wanna help </a>
-        </li>
+        <a href="/one_asso/{{this._id}}">
+          <li class="square assoBox {{this.categoryAsso}}">
+            <h2 class=" title mini">{{ this.name }}</h2>
+            <p class="since">Since {{this.since}}</p>
+            <p class="theydo">{{this.theyDo}}</p>
+            <a href="/one_asso/{{this._id}}" class="assoButton">I wanna help </a>
+          </li>
+        </a>
       </div>
       <div class="wrappyPub">
         <li class="assoBoxPub">
