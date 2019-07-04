@@ -10,14 +10,16 @@
     {{#if assos}}
     <ul id="assosList" class="list">
       {{#each assos}}
-      <div class="wrappy" href="/one_asso/{{this._id}}">
-        <li class="square assoBox {{this.categoryAsso}}">
-          <h2 class=" title mini">{{ this.name }}</h2>
-          <p class="since">Since {{this.since}}</p>
-          <p class="theydo">{{this.theyDo}}</p>
-          <a href="/one_asso/{{this._id}}" class="assoButton">I wanna help </a>
-        </li>
-      </div>
+      <a href="/one_asso/{{this._id}}">
+        <div class="wrappy">
+          <li class="square assoBox {{this.categoryAsso}}">
+            <h2 class=" title mini">{{ this.name }}</h2>
+            <p class="since">Since {{this.since}}</p>
+            <p class="theydo">{{this.theyDo}}</p>
+            <a href="/one_asso/{{this._id}}" class="assoButton">I wanna help </a>
+          </li>
+        </div>
+      </a>
       <div class="wrappyPub">
         <li class="assoBoxPub">
           <a href="https://www.aides.org/campagne/lhomophobie-frappe-toujours" target="_blank">
