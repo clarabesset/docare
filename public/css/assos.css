@@ -55,6 +55,19 @@
   box-sizing: border-box;
   position: relative;
 }
+
+.assoBoxPub {
+  padding: 20px;
+  text-align: center;
+  border: 3px solid black;
+  width: 390px;
+  height: 390px;
+  margin: 10px;
+  text-overflow: clip;
+  box-sizing: border-box;
+  position: relative;
+}
+
 .assoBox:hover {
   padding: 20px;
   text-align: center;
