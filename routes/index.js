@@ -5,6 +5,25 @@ router.get(["/", "/home"], (req, res) => {
   res.render("index", { nav: false });
 });
 
+const campagnes = [
+  {
+    image: "baamPUB.png",
+    href: "https://www.aides.org/campagne/lhomophobie-frappe-toujours"
+  },
+  {
+    image: "biblioPUB.png",
+    href: "https://www.aides.org/campagne/lhomophobie-frappe-toujours"
+  },
+  {
+    image: "polliniPUB.png",
+    href: "https://www.aides.org/campagne/lhomophobie-frappe-toujours"
+  },
+  {
+    image: "aidesPUB.png",
+    href: "https://www.aides.org/campagne/lhomophobie-frappe-toujours"
+  }
+];
+
 router.get(
   ["/assos", "/culture", "/environment", "/health", "/solidarity"],
   (req, res) => {
@@ -13,8 +32,20 @@ router.get(
       assosModel
         .find()
         .then(assos => {
-          console.log(assos[0]);
-          res.render("assos", { nav: true, assos });
+          const copy = [];
+
+          var count = 0;
+          assos.forEach((asso, i, arr) => {
+            // console.log(count);
+            copy.push(asso);
+            let c = campagnes[count];
+            // arr.splice(i + 1, 0, );
+            (c.isCampagne = true), copy.push(c);
+            count = count + 1 === 4 ? 0 : count + 1;
+          });
+
+          // console.log(assos[0]);
+          res.render("assos", { nav: true, assos: copy });
         })
         .catch(err => {
           console.log(err);

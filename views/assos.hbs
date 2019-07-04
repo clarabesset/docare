@@ -7,33 +7,31 @@
     {{#unless assos}}
     <p class="text-block">no assos yet!! wtf</p>
     {{/unless}}
-    {{#if assos}}
     <ul id="assosList" class="list">
+
+      {{#if assos}}
       {{#each assos}}
-      <a href="/one_asso/{{this._id}}">
-        <div class="wrappy">
-          <li class="square assoBox {{this.categoryAsso}}">
+      {{#unless this.isCampagne}}
+      <li class="square assoBox {{this.categoryAsso}}">
+        <a href="/one_asso/{{this._id}}">
+          <div class="wrappy">
             <h2 class=" title mini">{{ this.name }}</h2>
             <p class="since">Since {{this.since}}</p>
             <p class="theydo">{{this.theyDo}}</p>
             <a href="/one_asso/{{this._id}}" class="assoButton">I wanna help </a>
-          </li>
-        </div>
-      </a>
-      <div class="wrappyPub">
-        <li class="assoBoxPub">
-          <a href="https://www.aides.org/campagne/lhomophobie-frappe-toujours" target="_blank">
-            <img class="imagePub" src="/img/aidesPUB.png"></a>
-        </li>
-      </div>
-      {{!-- <img src="img/aidesPUB.png"> </li>
-        <li class="square assoBox">
-          <img src="img/baamPUB.png"> </li>
-        <li class="square assoBox">
-          <img src="img/biblioPUB.png"> </li>
-        <li class="square assoBox">
-          <img src="img/polliniPUB.png"> </li> --}}
+          </div>
+        </a>
+      </li>
+      {{/unless}}
+      {{#if this.isCampagne}}
+      <li class="assoBoxPub">
+        <a href="{{this.href}}" target="_blank">
+          <img class="imagePub" src="/img/{{this.image}}"></a>
+      </li>
+      {{/if}}
       {{/each}}
-    </ul> {{/if}}
+      {{/if}}
+    </ul>
+
   </div>
 </section>

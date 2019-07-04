@@ -1,11 +1,13 @@
 require("dotenv").config();
 require("./config/dbconnect");
 require("./config/cloudinary");
+require("./utils/helpers-hbs");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const express = require("express");
 const hbs = require("hbs");
 const app = express();
+
 app.locals.site_url = process.env.SITE_URL;
 
 app.use(express.json());
