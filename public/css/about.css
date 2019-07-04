@@ -1,0 +1,30 @@
+.big_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.about_container {
+  padding-top: 15%;
+  width: 50%;
+}
+.item_container {
+  margin-bottom: 10px;
+  border: solid 1px;
+  padding: 10px;
+}
+.title_container {
+  display: flex;
+  justify-content: center;
+}
+.index_Do {
+  color: blue;
+  font-family: "Righteous";
+}
+.about_title {
+  border-bottom: solid;
+  font-family: "Overpass";
+}
+.docare_title {
+  font-family: "Righteous";
+}

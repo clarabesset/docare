@@ -1,6 +1,7 @@
 const express = require("express");
 const router = new express.Router();
 const assosModel = require("./../models/assoModel");
+const userModel = require("./../models/userModel");
 router.get(["/", "/home"], (req, res) => {
   res.render("index", { nav: false });
 });
@@ -8,15 +9,18 @@ router.get(["/", "/home"], (req, res) => {
 const campagnes = [
   {
     image: "baamPUB.png",
-    href: "https://www.aides.org/campagne/lhomophobie-frappe-toujours"
+    href:
+      "https://www.helloasso.com/associations/bureau-d-accueil-et-d-accompagnement-des-migrants-baam/evenements/baam-migrants-festival"
   },
   {
     image: "biblioPUB.png",
-    href: "https://www.aides.org/campagne/lhomophobie-frappe-toujours"
+    href:
+      "https://www.bibliosansfrontieres.org/campagne/ouvrons-les-bibliotheques"
   },
   {
     image: "polliniPUB.png",
-    href: "https://www.aides.org/campagne/lhomophobie-frappe-toujours"
+    href:
+      "https://www.pollinis.org/nos-actions-pollinis/campagnes/sauvons-labeille-locale"
   },
   {
     image: "aidesPUB.png",
@@ -68,6 +72,17 @@ router.get("/one_asso/:id", (req, res) => {
     .findById(req.params.id)
     .then(asso => res.render("one_asso", { nav: true, asso }))
     .catch(err => console.log(err));
+});
+
+router.get("/userpage", (req, res) => {
+  userModel
+    .findById(req.params.id)
+    .then(asso => res.render("userpage", { nav: true, asso }))
+    .catch(err => console.log(err));
+});
+
+router.get("/about", (req, res) => {
+  res.render("about", { nav: true });
 });
 
 module.exports = router;

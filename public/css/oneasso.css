@@ -18,19 +18,57 @@
 .donationDiv {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   margin-right: 2px;
   margin-top: 130px;
   margin-left: 2px;
   margin-right: 100px;
 }
 .moneyDonation {
-  margin-right: 10px;
+  margin-top: 65px;
+  margin-right: 2px;
   padding: 20px;
   text-align: center;
   width: 400px;
   font-size: 23px;
 }
+
+.moneyButton {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #f7bbd0;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.titleMoney {
+  margin: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  font-style: italic;
+  color: #f7bbd0;
+  font-weight: 700;
+}
+
+.formMoney {
+  font-size: 18px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.labelMoney {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
 .timeDonation {
   padding: 20px;
   text-align: center;
@@ -42,6 +80,7 @@
 }
 
 .titleHelpTime {
+  margin: 1px;
   text-align: left;
   font-style: italic;
   font-size: 18px;
@@ -91,8 +130,9 @@
   border: 5px solid #78caf7;
   margin: 200px 10px -200px -100px;
   z-index: -1;
-  padding: 30px;
-  width: 500px;
+  padding: 40px;
+  padding-top: 50px;
+  width: 530px;
   height: 400px;
   right: 10px;
 }
