@@ -35,6 +35,10 @@
 .wrappy {
   margin: 40px 10px 40px 10px;
 }
+
+.wrappyPub {
+  margin: 40px 10px 40px 10px;
+}
 .assoBox {
   padding: 20px;
   text-align: center;
