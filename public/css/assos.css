@@ -39,6 +39,11 @@
 .wrappyPub {
   margin: 40px 10px 40px 10px;
 }
+
+.imagePub {
+  width: 390px;
+  height: 390px;
+}
 .assoBox {
   padding: 20px;
   text-align: center;
