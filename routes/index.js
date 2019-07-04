@@ -25,6 +25,24 @@ const campagnes = [
   {
     image: "aidesPUB.png",
     href: "https://www.aides.org/campagne/lhomophobie-frappe-toujours"
+  },
+  {
+    image: "welfarmPUB.png",
+    href: "https://action.welfarm.fr/couic2019"
+  },
+  {
+    image: "carePUB.png",
+    href:
+      "https://www.carefrance.org/care-actions/campagnes/non-violences-faites-aux-femmes.htm"
+  },
+  {
+    image: "actionfaimPUB.png",
+    href: "https://www.challengecontrelafaim.org/"
+  },
+  {
+    image: "sosvillagesPUB.png",
+    href:
+      "https://www.sosve.org/actualites/journee-mondiale-des-refugies-les-droits-de-lenfant-ne-doivent-pas-etre-compromis/"
   }
 ];
 
@@ -45,7 +63,7 @@ router.get(
             let c = campagnes[count];
             // arr.splice(i + 1, 0, );
             (c.isCampagne = true), copy.push(c);
-            count = count + 1 === 4 ? 0 : count + 1;
+            count = count + 1 === 8 ? 0 : count + 1;
           });
 
           // console.log(assos[0]);

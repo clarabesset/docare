@@ -1,7 +1,23 @@
 .titleAsso {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
+
+.bigTitleAsso {
+  font-size: 30px;
+  text-align: center;
+  padding: 0;
+  text-decoration: underline;
+  line-height: 10px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.bigTitleAsso h2 {
+  border-bottom: 3px solid black;
+  padding-bottom: 5px;
+}
+
 .soustitleAsso {
   margin: 0 auto;
   font-size: 18px;
