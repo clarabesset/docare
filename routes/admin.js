@@ -80,7 +80,7 @@ function insertdb() {
     .then(res => console.log("success data inserted"))
     .catch(err => console.log(err));
 }
-// insertdb();
+insertdb();
 // -------------------------------------SIGN UP/ LOGIN / LOGOUT
 router.get("/login-signup", (req, res, next) => {
   res.render("login-signup", { nav: true });
