@@ -23,10 +23,6 @@ const adminRouter = require("./routes/admin");
 
 app.use(basePageRouter);
 app.use(adminRouter);
-// IL MANQUE LES PARAMETRES DE LOGIN, A VOIR PLUS TARD
-
-// app.use(basePageRouter);
-// app.use(adminRouter);
 
 const listener = app.listen(process.env.PORT || 3333, () => {
   console.log(`app started at ${process.env.SITE_URL}`);

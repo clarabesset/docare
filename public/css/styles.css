@@ -11,6 +11,12 @@ hr {
 ul {
   list-style: none;
 }
+
+.main-content {
+  position: relative;
+  top: 170px;
+}
+
 .text-block {
   padding: 20px;
   border: 1px solid gainsboro;

@@ -2,33 +2,32 @@ body {
   width: 100vh;
   height: 100vh;
 }
-
 .index_C {
   color: #fcdd4b;
   font-family: "Righteous";
 }
-
 .index_A {
   color: #77faab;
   font-family: "Righteous";
 }
-
 .index_R {
   color: #78caf7;
   font-family: "Righteous";
 }
-
 .index_E {
   color: #f7bbd0;
   font-family: "Righteous";
 }
-
 .index_container {
+  background-image: url("../img/backgroundHome.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   height: 100vh;
+  margin-top: -177px;
 }
 
 .index_container_logo {
@@ -37,18 +36,15 @@ body {
   align-items: center;
   margin-top: 7%;
 }
-
 .index_title {
   font-size: 9rem;
   margin-bottom: 0%;
   color: blue;
 }
-
 .index_quote {
   font-size: 1.5rem;
   margin-top: 0%;
 }
-
 .index_link {
   text-decoration: none;
   font-family: "Overpass";
@@ -57,38 +53,16 @@ body {
   text-align: center;
   padding: 0em 0.5em;
   border: 0.1em solid black;
-  border-radius: 0.12em;
-  box-shadow: 8px 8px 2px 1px blue;
+  border-radius: 5px;
+  box-shadow: 6px 6px 2px 1px blue;
   margin-top: 5%;
 }
-
 .index_link:hover {
   color: blue;
   background-color: white;
   border: 0.1em solid blue;
   box-shadow: 8px 8px 2px 1px black;
 }
-
 .index_link:active {
   transform: translateY(4px);
-}
-
-.index_aboutus {
-  text-decoration: none;
-  font-family: "Overpass";
-  font-size: 1.5rem;
-  color: black;
-  text-align: center;
-  padding: 0em 0.5em;
-  border: 0.1em solid black;
-  border-radius: 0.12em;
-  box-shadow: 8px 8px 2px 1px blue;
-  margin-top: 5%;
-}
-
-.index_aboutus:hover {
-  color: blue;
-  background-color: white;
-  border: 0.1em solid blue;
-  box-shadow: 8px 8px 2px 1px black;
 }

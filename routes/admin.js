@@ -80,7 +80,7 @@ function insertdb() {
     .then(res => console.log("success data inserted"))
     .catch(err => console.log(err));
 }
-//insertdb();
+// insertdb();
 // -------------------------------------SIGN UP/ LOGIN / LOGOUT
 router.get("/login-signup", (req, res, next) => {
   res.render("login-signup", { nav: true });
@@ -141,7 +141,7 @@ router.post("/login", (req, res, next) => {
         return;
       }
       if (bcrypt.compareSync(theUserPassword, user.password)) {
-        req.session.currentUser = user;
+        console.log(req.session);
         res.redirect("/assos");
       } else {
         res.render("login-signup", { errorMessage: "Incorrect password" });

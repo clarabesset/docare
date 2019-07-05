@@ -74,7 +74,7 @@ module.exports = [
     linkMoney:
       "https://www.pasteur.fr/sites/default/files/rubrique_linstitut_pasteur/ra2018-francais_2606_web.pdf",
     categoryAsso: "health",
-    image: "/img/institutpasteur.jpeg"
+    image: "/img/pasteur.png"
   },
   {
     name: "Care",
@@ -87,7 +87,7 @@ module.exports = [
     linkMoney:
       "https://www.carefrance.org/ressources/documents/3/7ad7574-8121-Rapport_Annuel_CARE_2018.pdf",
     categoryAsso: "solidarity",
-    image: "/img/care.jpeg"
+    image: "/img/care.png"
   },
   {
     name: "Petits princes",
@@ -126,7 +126,7 @@ module.exports = [
     linkMoney:
       "https://www.acted.org/wp-content/uploads/2018/05/acted-comptes-2017.pdf",
     categoryAsso: "solidarity",
-    image: "/img/acted.jpeg"
+    image: "/img/acted.png"
   },
   {
     name: "Le refuge",
@@ -151,7 +151,7 @@ module.exports = [
     linkMoney:
       "http://baamasso.org/fr/compte-rendu-du-conseil-dadministration-du-31-janvier-2019/",
     categoryAsso: "solidarity",
-    image: "/img/baam.jpeg"
+    image: "/img/baam.png"
   },
   {
     name: "Amnesty International",
@@ -251,7 +251,7 @@ module.exports = [
     linkMoney:
       "https://terre-humanisme.org/wp-content/uploads/2019/05/rapport-cac-2018.pdf",
     categoryAsso: "environment",
-    image: "/img/terreethumanisme.png"
+    image: "/img/terrehumanisme.png"
   },
   {
     name: "Toutes à l'école",

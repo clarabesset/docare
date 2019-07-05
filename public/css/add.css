@@ -23,6 +23,7 @@ select {
   margin-top: 0%;
   color: blue;
   border-bottom: 1px solid;
+  text-align: center;
 }
 
 .form_container {
@@ -30,7 +31,6 @@ select {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  padding-top: 13%;
 }
 
 .label {
@@ -82,7 +82,6 @@ select {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  padding-top: 13%;
 }
 
 .table_title {

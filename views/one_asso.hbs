@@ -1,13 +1,14 @@
 <div class="one-asso-container">
   <div class="informationDiv">
-    <div class="asso-imageBox">
+    <a class="asso-imageBox" href={{asso.linkSite}} target="_blank">
       <img src={{asso.image}} alt="img-product" class="asso-img">
-    </div>
-    <div class="asso-info">
+    </a>
+    <div class="asso-info {{asso.categoryAsso}}">
       <h2 class="asso-name">{{asso.name}}</h2>
-      <p class="asso-since">Since: {{asso.since}}</p>
-      <p class="asso-theyDo">What we do: {{asso.theyDo}}</p>
-      <p class="asso-lastMission">Last Mission: {{asso.lastMission}}</p>
+      <p class="asso-since"><span class="subtitleAssos">Since:</span> {{asso.since}}</p>
+      <p class="asso-theyDo"><span class="subtitleAssos">What we do: </span>{{asso.theyDo}}</p>
+      <p class="asso-lastMission"><span class="subtitleAssos">Last Mission: </span>{{asso.lastMission}}</p>
+      <a class="showMoney" href={{asso.linkMoney}} target="_blank">See last financial report</a>
     </div>
   </div>
   <div class="donationDiv">
@@ -21,92 +22,25 @@
         </br>
         <label class="labelMoney">one-time donation</label>
         <input placeholder="mhhh... 100$?" name="since" type="Number" class="input">
-        <button class="moneyButton">secure checkout</button>
+        <button class="moneyButton" onclick=""> checkout</button>
       </div>
     </div>
     <div class="timeDonation">
-      <h3 class="titleMoney">Give <i class="far fa-clock"></i>
-        <ul class="listTimeDonations">
-          <li><i class="fas fa-long-arrow-alt-right"></i>
-            <a class="titleHelpTime" href={{asso.linkSite}} target=" _blank">Get the facts right and educate others!</a>
-            <p class="textHelpTime">In 2019, truth matters. Simply by reading about our missions, learning about the
-              issues at hand, and fact-checking the news you encounter, you can make a real difference.</p>
-          </li>
-          </br>
-          <li><i class="fas fa-long-arrow-alt-right"></i>
-            <a class="titleHelpTime" href={{asso.linkSite}} target=" _blank">Volunteer with us!</a>
-            <p class="textHelpTime">Once in a while, why not replace your Netflix session by an evening volunteering
-              with us? Your time is everything.</p>
-          </li>
-          </br>
-          <li><i class="fas fa-long-arrow-alt-right"></i>
-            <a class="titleHelpTime" href={{asso.linkSite}} target=" _blank">Join our street fundraising team!</a>
-            <p class="textHelpTime">Woke af? Well might as well make it your job. Make your career human today and join
-              our team.</p>
-
-          </li>
-          </br>
-
-        </ul>
-
-      </h3>
-
-
-    </div>
-
-  </div>
-
-
-
-  {{!-- <body>
-  <div class="donation-container">
-
-    <div class="donation-box">
-      <div class="title">Donation Information</div>
-
-      <div class="fields">
-        <input type="text" id="firstName" placeholder="First Name"> </input>
-        <input type="text" id="lastName" placeholder="Last Name"> </input>
-        <input type="text" id="email" placeholder="Email"> </input>
-      </div>
-
-      <div class="amount">
-        <div class="button">$30</div>
-        <div class="button">$50</div>
-        <div class="button">$100</div>
-        <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
-      </div>
-
-      <div class="switch">
-        <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
-        <label for="one-time" class="switch-label switch-label-off">One-Time</label>
-        <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-        <label for="monthly" class="switch-label switch-label-on">Monthly</label>
-        <span class="switch-selection"></span>
-      </div>
-
-      <div class="checkboxes">
-        <input type="checkbox" id="receipt" class="checkbox" />
-        <label for="receipt">Email Me A Receipt</label>
-        <br />
-        <input type="checkbox" id="anon" class="checkbox" />
-        <label for="anon">Give Anonymously</label>
-        <br />
-        <input type="checkbox" id="list" class="checkbox" />
-        <label for="list">Add Me To Email List</label>
-      </div>
-
-      <div class="confirm">
-
-      </div>
-
-      <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
-    </div>
-
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
-</body> --}}
-
-</div>
+      <h3 class="titleMoney">Give <i class="far fa-clock"></i></h3>
+      <ul class="listTimeDonations">
+        <li><i class="fas fa-long-arrow-alt-right"></i>
+          <a class="titleHelpTime" href={{asso.linkSite}} target=" _blank">Get the facts right and educate others!</a>
+          <p class="textHelpTime">In 2019, truth matters. Simply by reading about our missions, learning about the
+            issues at hand, and fact-checking the news you encounter, you can make a real difference.</p>
+        </li>
+        <li><i class="fas fa-long-arrow-alt-right"></i>
+          <a class="titleHelpTime" href={{asso.linkSite}} target=" _blank">Volunteer with us!</a>
+          <p class="textHelpTime">Once in a while, why not replace your Netflix session by an evening volunteering
+            with us? Your time is everything.</p>
+        </li>
+        <li><i class="fas fa-long-arrow-alt-right"></i>
+          <a class="titleHelpTime" href={{asso.linkSite}} target=" _blank">Join our street fundraising team!</a>
+          <p class="textHelpTime">Woke af? Well might as well make it your job. Make your career human today and join
+            our team.</p>
+        </li>
+      </ul </div> </div> </div>

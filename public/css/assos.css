@@ -2,7 +2,6 @@
   font-size: 18px;
   text-align: center;
 }
-
 .bigTitleAsso {
   font-size: 30px;
   text-align: center;
@@ -11,12 +10,10 @@
   font-weight: 500;
   margin-top: 0;
 }
-
 .bigTitleAsso h2 {
   border-bottom: 3px solid black;
   padding-bottom: 5px;
 }
-
 .soustitleAsso {
   margin: 0 auto;
   font-size: 18px;
@@ -48,11 +45,9 @@
 .wrappy {
   margin: 40px 10px 40px 10px;
 }
-
 .wrappyPub {
   margin: 40px 10px 40px 10px;
 }
-
 .imagePub {
   margin: 15px;
   width: 375px;
@@ -69,7 +64,6 @@
   box-sizing: border-box;
   position: relative;
 }
-
 .assoBox {
   padding: 30px;
   text-align: center;
@@ -81,7 +75,6 @@
   box-sizing: border-box;
   position: relative;
 }
-
 .assoBoxPub {
   text-align: center;
   padding: 10px;
@@ -94,7 +87,6 @@
   box-sizing: border-box;
   position: relative;
 }
-
 .assoBox:hover {
   text-align: center;
   border: 3px solid black;
@@ -113,7 +105,7 @@
   height: 390px;
   width: 390px;
   box-sizing: border-box;
-  border: 5px solid #fcdd4b;
+  border: 5px solid #fdf90b;
 }
 .assoBox.culture:hover::after {
   content: " ";
@@ -124,8 +116,8 @@
   height: 390px;
   width: 390px;
   box-sizing: border-box;
-  border: 5px solid #fcdd4b;
-  background-color: #fcdd4b;
+  border: 5px solid #fdf90b;
+  background-color: #fdf90b;
   color: black;
 }
 .assoBox.environment::after {
@@ -137,7 +129,7 @@
   height: 390px;
   width: 390px;
   box-sizing: border-box;
-  border: 5px solid #77faab;
+  border: 5px solid #05ff69;
 }
 .assoBox.environment:hover::after {
   content: " ";
@@ -148,8 +140,8 @@
   height: 390px;
   width: 390px;
   box-sizing: border-box;
-  border: 5px solid #77faab;
-  background-color: #77faab;
+  border: 5px solid #05ff69;
+  background-color: #05ff69;
 }
 .assoBox.health::after {
   content: " ";
@@ -160,7 +152,7 @@
   height: 390px;
   width: 390px;
   box-sizing: border-box;
-  border: 5px solid #78caf7;
+  border: 5px solid #22aefa;
 }
 .assoBox.health:hover::after {
   content: " ";
@@ -171,8 +163,8 @@
   height: 390px;
   width: 390px;
   box-sizing: border-box;
-  border: 5px solid #78caf7;
-  background-color: #78caf7;
+  border: 5px solid #22aefa;
+  background-color: #22aefa;
 }
 .assoBox.solidarity::after {
   content: " ";
@@ -183,7 +175,7 @@
   height: 390px;
   width: 390px;
   box-sizing: border-box;
-  border: 5px solid #f7bbd0;
+  border: 5px solid #f5518b;
 }
 .assoBox.solidarity:hover::after {
   content: " ";
@@ -194,8 +186,8 @@
   height: 390px;
   width: 390px;
   box-sizing: border-box;
-  border: 5px solid #f7bbd0;
-  background-color: #f7bbd0;
+  border: 5px solid #f5518b;
+  background-color: #f5518b;
 }
 ul {
   padding: 0px !important;
@@ -240,7 +232,6 @@ aside.tag-wrapper {
 .assos-wrapper {
   width: 100%;
   padding: 10px;
-  padding-top: 11%;
 }
 .assos-infos {
   margin-bottom: 2rem;

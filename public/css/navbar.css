@@ -1,17 +1,14 @@
-.pink {
-  color: #f29585;
-}
 .index_C {
-  color: #fcdd4b;
+  color: #fdf90b;
 }
 .index_A {
-  color: #77faab;
+  color: #05ff69;
 }
 .index_R {
-  color: #78caf7;
+  color: #22aefa;
 }
 .index_E {
-  color: #f7bbd0;
+  color: #f5518b;
 }
 .line {
   margin-bottom: 0%;
@@ -63,16 +60,16 @@ h2.logo-item {
   background: blue;
 }
 .nav-item.culture:hover {
-  background: #fcdd4b;
+  background: #fdf90b;
 }
 .nav-item.enviro:hover {
-  background: #77faab;
+  background: #05ff69;
 }
 .nav-item.health:hover {
-  background: #78caf7;
+  background: #22aefa;
 }
 .nav-item.solida:hover {
-  background: #f7bbd0;
+  background: #f5518b;
 }
 .signlook:hover {
   background: #ebebeb;
@@ -92,4 +89,8 @@ a {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.mobile_responsive {
+  display: none;
 }

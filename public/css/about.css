@@ -5,13 +5,13 @@
   justify-content: center;
 }
 .about_container {
-  padding-top: 15%;
   width: 50%;
 }
 .item_container {
   margin-bottom: 10px;
   border: solid 1px;
   padding: 10px;
+  text-align: center;
 }
 .title_container {
   display: flex;

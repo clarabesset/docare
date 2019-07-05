@@ -8,53 +8,60 @@
   height: calc(100vh - (84px));
   margin-right: 20px;
 }
+*:focus {
+  outline: none;
+}
 .informationDiv {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-right: 10px;
-  margin-top: 130px;
+  margin: 10px;
+  padding-bottom: 30px;
+}
+.subtitleAssos {
+  text-decoration: underline;
+}
+.showMoney {
+  text-decoration: underline;
 }
 .donationDiv {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-right: 2px;
-  margin-top: 130px;
   margin-left: 2px;
   margin-right: 100px;
 }
 .moneyDonation {
   margin-top: 65px;
   margin-right: 2px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  width: 400px;
+  width: 250px;
   font-size: 23px;
 }
-
 .moneyButton {
   width: 100px;
-  height: 50px;
+  height: 40px;
   margin: 0 auto;
   margin-top: 30px;
-  background-color: #f7bbd0;
+  background-color: #f5518b;
   font-size: 18px;
   border-radius: 5px;
   font-weight: 300;
 }
-
+.listTimeDonations li {
+  margin: 0 0 3px 0;
+}
 .titleMoney {
   margin: 10px;
 }
-
 h4 {
   font-size: 20px;
   font-style: italic;
-  color: #f7bbd0;
+  color: #f5518b;
   font-weight: 700;
 }
-
 .formMoney {
   font-size: 18px;
   display: flex;
@@ -63,40 +70,35 @@ h4 {
   width: 150px;
   margin: 0 auto;
 }
-
 .labelMoney {
   font-size: 16px;
   margin-bottom: 5px;
 }
-
 .timeDonation {
-  padding: 20px;
+  padding-top: 40px;
+  padding-right: 20px;
   text-align: center;
-  width: 400px;
-  font-size: 23px;
+  width: 350px;
 }
 .listTimeDonations {
   text-align: left;
 }
-
 .titleHelpTime {
   margin: 1px;
   text-align: left;
   font-style: italic;
   font-size: 18px;
 }
-
 .titleHelpTime:hover {
   color: blue;
 }
-
 .textHelpTime {
   text-align: left;
   font-size: 16px;
 }
-
 .one-asso-container > * {
   margin-bottom: 1.2rem;
+  margin-top: 0%;
 }
 .asso-name {
   font-size: 2.3rem;
@@ -104,6 +106,7 @@ h4 {
 }
 .asso-theyDo {
   font-size: 1rem;
+  margin-top: 50px;
 }
 .asso-lastMission {
   font-size: 1rem;
@@ -128,11 +131,23 @@ h4 {
   text-align: center;
   box-sizing: border-box;
   border: 5px solid #78caf7;
-  margin: 200px 10px -200px -100px;
+  margin: 150px 10px -200px -100px;
   z-index: -1;
-  padding: 40px;
-  padding-top: 50px;
+  padding: 18px;
+  padding-top: 10px;
   width: 530px;
-  height: 400px;
+  height: 450px;
   right: 10px;
+}
+.asso-info.health {
+  border: 5px solid #22aefa;
+}
+.asso-info.environment {
+  border: 5px solid #05ff69;
+}
+.asso-info.solidarity {
+  border: 5px solid #f5518b;
+}
+.asso-info.culture {
+  border: 5px solid #fdf90b;
 }
